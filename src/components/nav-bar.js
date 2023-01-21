@@ -11,7 +11,7 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mr-auto">             
              <li className="nav-item">
-                { <a classname="nav-link" href="https://awsclouddemos.com" target="_blank">Demos</a> }
+                { <a className="nav-link" href="https://awsclouddemos.com" target="_blank">Demos</a> }
              </li>
           </ul>
           </div>

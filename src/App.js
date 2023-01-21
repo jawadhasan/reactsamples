@@ -1,16 +1,22 @@
-import logo from './logo.ico';
+import { Routes, Route } from 'react-router-dom';
+
+import NoMatch from "./components/no-match";
+import Home from "./home"
+
 import './App.css';
 import NavBar from './components/nav-bar';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <NavBar />
-      <div className='container'>
+     <>
+        <NavBar />       
+        <Routes>
+           <Route path="/" element={<Home />} />                 
+           <Route path="*" element={<NoMatch />} />
+        </Routes>
        
-      </div>
-    </div>
+     </>
   );
-}
+};
 
 export default App;
