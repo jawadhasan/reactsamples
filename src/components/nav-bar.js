@@ -1,4 +1,4 @@
-import { NavLink  } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 const NavBar = () => {
    return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light border">
@@ -12,6 +12,9 @@ const NavBar = () => {
          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mr-auto">
             <li className="nav-item">
+                  <NavLink className="nav-link" to="/users">Users</NavLink>
+               </li>
+               <li className="nav-item">
                   <NavLink className="nav-link" to="/finalspace">FinalSpace</NavLink>
                </li>
                <li className="nav-item">
